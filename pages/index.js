@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Toolbox</title>
+        <title>Uitnodiging</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -16,8 +16,7 @@ export default function Home() {
         <Header title="Next.js Toolbox" />
         <hr />
         <p className="description">
-          Here's an example of a Netlify Form! When you fill this out, the
-          submissions can be found in the Netlify Admin site.
+          We willen graag weten of je er bij bent!
         </p>
         <FeedbackForm />
         <JokeBlock />
