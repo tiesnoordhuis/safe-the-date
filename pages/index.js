@@ -19,7 +19,6 @@ export default function Home() {
           We willen graag weten of je er bij bent!
         </p>
         <FeedbackForm />
-        <JokeBlock />
       </main>
       <Footer />
     </div>

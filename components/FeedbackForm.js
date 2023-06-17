@@ -23,7 +23,6 @@ export default function FeedbackForm() {
         <p htmlFor="feedback">Ben je bij de ceremoni aanwezig?</p>
         <span>Ja</span><input id='aanwezigJa' name='aanwezig' type='radio' value="Ja" required/>
         <span>Nee</span><input id='aanwezigNee' name='aanwezig' type='radio' value="Ja" required/>
-        <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         <button className={styles.button} type="submit">Submit</button>
       </form>
   )
