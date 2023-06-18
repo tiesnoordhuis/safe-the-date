@@ -13,6 +13,7 @@ export default function Home() {
       backgroundImage: 'url(/bg-sky2.jpg)',
       backgroundSize: '100% 100%',
       backgroundRepeat: 'no-repeat',
+      color: '#826750'
     }}
     className="container">
       <img
@@ -22,6 +23,7 @@ export default function Home() {
           position: 'absolute',
           top: 0,
           left: 0,
+          zIndex: 10,
           width: '30%', // Adjust the width as needed
         }}
       />
@@ -32,6 +34,7 @@ export default function Home() {
           position: 'absolute',
           top: 0,
           right: 0,
+          zIndex: 10,
           width: '30%', // Adjust the width as needed
           transform: 'scaleX(-1)', // Mirror the image horizontally
         }}
