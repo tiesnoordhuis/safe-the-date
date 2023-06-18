@@ -13,7 +13,7 @@ export default function Home() {
       backgroundImage: 'url(/bg-sky2.jpg)',
       backgroundSize: '100% 100%',
       backgroundRepeat: 'no-repeat',
-      color: '#826750'
+      color: 'rgb(147, 11, 56)'
     }}
     className="container">
       <Head>

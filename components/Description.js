@@ -11,7 +11,7 @@ export default function Description({part}) {
                 28th of June 2023
             </div>
             <div className={styles.medium}>
-                at 10:30
+                10:30<span className={styles.small}> in the morning</span>
             </div>
         </div>
         <div className={styles.main}>
