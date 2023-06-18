@@ -8,7 +8,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default function Home() {
   return (
     <div 
-    style={{ position: 'relative' }}
+    style={{ 
+      position: 'relative',
+      backgroundImage: 'url(/bg-sky2.jpg)',
+      backgroundSize: '100% 100%',
+      backgroundRepeat: 'no-repeat',
+    }}
     className="container">
       <img
         src="/bg-flower2.svg"
@@ -16,7 +21,7 @@ export default function Home() {
         style={{
           position: 'absolute',
           top: 0,
-          left: '-50px',
+          left: 0,
           width: '30%', // Adjust the width as needed
         }}
       />
@@ -26,7 +31,7 @@ export default function Home() {
         style={{
           position: 'absolute',
           top: 0,
-          right: '-50px',
+          right: 0,
           width: '30%', // Adjust the width as needed
           transform: 'scaleX(-1)', // Mirror the image horizontally
         }}
