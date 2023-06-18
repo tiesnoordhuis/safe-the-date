@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    perspective: 800px;
 }
 
 .header > * {
@@ -10,6 +11,7 @@
 }
 
 .title {
-    font-size: xx-large;
+    font-family: 'Diphylleia';
+    font-size: 40px;
     padding: 1em 0;
 }
