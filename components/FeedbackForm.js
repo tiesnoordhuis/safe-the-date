@@ -43,12 +43,12 @@ export default function FeedbackForm() {
 
       <h5>Please let us know if you will attend</h5>
 
-      <div className={styles['form-row']}>
+      <div className={`${styles['form-row']} ${styles.good}`}>
         <input id="ceremonyYes" name="ceremony" type="radio" value="Yes" required />
         <label htmlFor="ceremonyYes" className={styles['form-label-fixed']}>Yes, I will attend the ceremony</label>
       </div>
 
-      <div className={styles['form-row']}>
+      <div className={`${styles['form-row']} ${styles.bad}`}>
         <input id="ceremonyNo" name="ceremony" type="radio" value="No" required />
         <label htmlFor="ceremonyNo" className={styles['form-label-fixed']}>No, I will not attend the ceremony</label>
       </div>

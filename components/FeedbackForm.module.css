@@ -46,3 +46,26 @@
   flex-direction: row;
   align-items: center;
 }
+
+.good {
+  /* background-color: rgb(127, 219, 127); */
+  color:  rgb(4, 124, 4);
+}
+
+.bad {
+  /* background-color: rgb(127, 219, 127); */
+  color:  rgb(117, 18, 18);
+}
+
+.good > .form-label-fixed,
+.bad > .form-label-fixed {
+  font-weight: bold;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+
+.good > input,
+.bad > input {
+  font-size: 30px;
+  line-height: 2em;
+}

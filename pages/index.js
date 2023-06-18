@@ -16,6 +16,10 @@ export default function Home() {
       color: '#826750'
     }}
     className="container">
+      <Head>
+        <title>Invitation</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <img
         src="/bg-flower2.svg"
         alt="Background Image"
@@ -23,7 +27,6 @@ export default function Home() {
           position: 'absolute',
           top: 0,
           left: 0,
-          zIndex: 10,
           width: '30%', // Adjust the width as needed
         }}
       />
@@ -34,17 +37,15 @@ export default function Home() {
           position: 'absolute',
           top: 0,
           right: 0,
-          zIndex: 10,
           width: '30%', // Adjust the width as needed
           transform: 'scaleX(-1)', // Mirror the image horizontally
         }}
       />
-      <Head>
-        <title>Invitation</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main>
+      <main style={{
+        position: 'relative',
+        zIndex: 20
+      }}>
         <Header />
         <hr />
         <Description part='cerimony'/>
