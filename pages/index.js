@@ -2,22 +2,22 @@ import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import FeedbackForm from "@components/FeedbackForm";
-import JokeBlock from "@components/JokeBlock";
+import Description from "@components/Description";
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Uitnodiging</title>
+        <title>Invitation</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Next.js Toolbox" />
+        <Header />
         <hr />
-        <p className="description">
-          We willen graag weten of je er bij bent!
-        </p>
+        <Description part='cerimony'/>
+        <hr />
         <FeedbackForm />
       </main>
       <Footer />

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <p>een echte eigen website</p>
+        <p>A real personal webpage made by me</p>
       </footer>
     </>
   )
