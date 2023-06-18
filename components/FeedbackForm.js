@@ -37,6 +37,7 @@ export default function FeedbackForm() {
           type="text"
           name="name"
           defaultValue={name ? name : ''}
+          placeholder="Fill in your name"
           required
         />
       </div>

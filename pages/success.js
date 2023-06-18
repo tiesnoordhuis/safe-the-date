@@ -21,7 +21,7 @@ export default function Success() {
 
       <main>
         <h1>RSVP Received!</h1>
-        <img src='/us2.jpeg' />
+        <img src='/us2.jpeg' style={{ objectFit: 'contain'}} />
         <p>Thank you for letting us know</p>
         <Link href="/"><a>Back</a></Link>
       </main>
