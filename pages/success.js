@@ -13,8 +13,9 @@ export default function Success() {
 
       <main>
         <h1>RSVP Received!</h1>
+        <img src='/us.jpeg' />
         <p>Thank you for letting us know</p>
-        <Link href="/"><a>home page</a></Link>
+        <Link href="/"><a>Back</a></Link>
       </main>
 
       <Footer />
