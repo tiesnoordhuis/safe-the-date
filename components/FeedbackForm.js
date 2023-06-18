@@ -1,7 +1,17 @@
 import styles from "./FeedbackForm.module.css";
-import Description from "./Description";
+import { useState, useEffect } from "react";
+
 
 export default function FeedbackForm() {
+  const [name, setName] = useState('');
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const paramValue = queryParams.get('name');
+    setName(paramValue);
+  }, []);
+
+
   return (
     <form
       className={styles.form}
@@ -20,12 +30,13 @@ export default function FeedbackForm() {
       </p>
 
       <div className={styles['form-row']}>
-        <label htmlFor="name">Naam</label>
+        <label htmlFor="name">Name</label>
         <input
           id="name"
           className={styles["form-field"]}
           type="text"
           name="name"
+          defaultValue={name ? name : ''}
           required
         />
       </div>
