@@ -16,7 +16,7 @@ function BringPlusOneInput({ showPlusOne, setShowPlusOne }) {
         }}
       />
       <label class="form-check-label" for="bringPlusOne">
-        Are you bring a plus one?
+        Are you bringing a plus one?
       </label>
     </div>
   );
