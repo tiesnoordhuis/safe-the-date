@@ -74,7 +74,7 @@ export default function DinnerForm() {
         data-netlify-honeypot="bot-field"
         name="dinner"
         method="POST"
-        action="/success"
+        action="/successDinner"
       >
         <input type="hidden" name="form-name" value="dinner" />
         <p className={styles.hidden}>
