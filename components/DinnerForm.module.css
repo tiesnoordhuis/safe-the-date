@@ -69,3 +69,56 @@
     font-size: 30px;
     line-height: 2em;
   }
+
+.desc {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc > * {
+    text-align: center;
+}
+
+.main {
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.medium {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(69, 77, 90);
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.second {
+    text-align: center;
+    font-size: 14px;
+}
+
+.big, .medium, .label {
+    text-align: center;
+}
+
+.small {
+    font-size: 18px;
+}
