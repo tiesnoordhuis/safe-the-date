@@ -9,6 +9,7 @@ function BringPlusOneInput({ showPlusOne, setShowPlusOne }) {
         type="checkbox"
         role="switch"
         id="bringPlusOne"
+        name="bringPlusOne"
         checked={showPlusOne}
         value={showPlusOne}
         onClick={() => {
