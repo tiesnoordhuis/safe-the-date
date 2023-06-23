@@ -125,14 +125,36 @@ export default function DinnerForm() {
           </label>
         </div>
 
-        {plusOneAllowed ? (
-          <BringPlusOneInput
-            setShowPlusOne={setShowPlusOne}
-            showPlusOne={showPlusOne}
-          />
-        ) : null}
+        
+    <div className={plusOneAllowed ? 'form-check form-switch' : styles.hidden} >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        role="switch"
+        id="bringPlusOne"
+        name="bringPlusOne"
+        checked={showPlusOne}
+        value={showPlusOne}
+        onClick={() => {
+          setShowPlusOne(!showPlusOne);
+        }}
+      />
+      <label class="form-check-label" for="bringPlusOne">
+        Are you bringing a plus one?
+      </label>
+    </div>
 
-        {showPlusOne ? <PlusOneNameInput /> : null}
+    <div className={showPlusOne ? styles["form-row"] : styles.hidden}>
+      <label htmlFor="plusOneName">Name</label>
+      <input
+        id="plusOneName"
+        className={styles["form-field"]}
+        type="text"
+        name="plusOneName"
+        placeholder="Fill in their name"
+        required
+      />
+    </div>
 
         <button className={styles.button} type="submit">
           Submit

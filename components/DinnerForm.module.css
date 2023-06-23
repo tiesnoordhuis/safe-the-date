@@ -122,3 +122,7 @@
 .small {
     font-size: 18px;
 }
+
+.hidden {
+  display: hidden;
+}
